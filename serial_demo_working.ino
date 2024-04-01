@@ -52,6 +52,9 @@ void setup() {
 
   // Set up callbacks
   pServer->setCallbacks(new MyServerCallbacks());
+  
+  // Print header for CSV data
+  Serial.println("time,temperature,humidity,water,soilmoisture");
 }
 
 void loop() {
